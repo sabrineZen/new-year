@@ -1,0 +1,204 @@
+body
+{
+    width: 100vw; 
+    height: 100vh; 
+    margin: 0;    
+    overflow: hidden;  
+    background: linear-gradient(to right,rgb(19, 19, 49),rgb(7, 7, 7));
+}
+
+.container{
+    position: absolute;
+    right: 600px;
+    top: 300px;
+  
+    width: 600px;
+    height: 300px;
+    padding-left: 200px;
+    padding-top: 70px;
+    visibility: hidden;
+    transform: translateY(600px);
+    transition: translate 2s ease-in;
+    
+}
+
+.chiffres{
+    display: inline-block;
+    margin: 2 20px;
+    width: 100px;
+    height: 200px;
+    font-size: 200px;
+    padding-bottom: 45px;
+    padding-right: 8px;
+  
+    
+}
+.container :first-child{
+    position: absolute;
+    left: -700px;
+    transition: transform  2s ease-in-out;
+
+
+
+}
+
+.balllon{
+   animation: animate 2s ease-in-out infinite;
+    transition: transform 2s ease;
+    position: absolute;
+   
+}
+
+@keyframes animate {
+    0%{
+        transform:translateY(0px);
+    }
+    70%{
+        transform:translateY(-20px);
+    }
+
+    100%{
+        
+        transform:translateY(0px);
+    }
+
+
+}
+
+.ballon{
+    position: absolute;
+    top: 190px;
+    left: 790px;
+    width: 200px;
+    height: 250px;
+    border-radius: 95px 95px 100px 100px;
+    background-color: #FFD700;
+    color: blue;
+    font-size: 60px;
+
+}
+.file{
+    background-color: black;
+    height: 200px;
+    width: 2px;
+    position: absolute;
+    top: 440px;
+    left: 890px;
+   
+}
+
+.balllon1{
+
+    animation: animate 2s linear infinite;
+    transition: 2s;
+
+
+}
+
+@keyframes animate {
+    0%{
+        transform:translateY(0px);
+    }
+    70%{
+        transform:translateY(-20px);
+    }
+
+    100%{
+        
+        transform:translateY(0px);
+    }
+
+
+}
+ 
+
+.ballon1{
+    position: absolute;
+    top: 280px;
+    left: 1400px;
+    width: 200px;
+    height: 250px;
+    border-radius: 95px 95px 100px 100px;
+    background-color: #C0C0C0;
+    color: blue;
+    font-size: 60px;
+}
+.file1{
+    background-color: black;
+    height: 200px;
+    width: 2px;
+    position: absolute;
+    top: 530px;
+    left: 1500px;
+   
+
+}
+.balllon2{
+
+    animation: animate 2s linear infinite;
+    transition: 2s;
+
+
+}
+
+@keyframes animate {
+    0%{
+        transform:translateY(0px);
+    }
+    70%{
+        transform:translateY(-20px);
+    }
+
+    100%{
+        
+        transform:translateY(0px);
+    }
+
+
+}
+ 
+.ballon2{
+    position: absolute;
+    top: 280px;
+    left: 130px;
+    width: 200px;
+    height: 250px;
+    border-radius: 95px 95px 100px 100px;
+    background-color:  #800080;
+    color: blue;
+    font-size: 60px;
+}
+.file2{
+    background-color: black;
+    height: 200px;
+    width: 2px;
+    position: absolute;
+    top: 530px;
+    left: 230px;
+   
+
+}
+
+#container1 {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .division {
+    position: absolute;
+  }
+  
+  .drop {
+    position: absolute;
+    animation: Animation linear infinite;
+  }
+  
+  @keyframes Animation {
+    0% {
+      top: 0;
+    }
+    100% {
+      top: 100vh;
+    }
+  }

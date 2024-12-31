@@ -4,14 +4,13 @@ body
     height: 100vh; 
     margin: 0;    
     overflow: hidden;  
-    background: linear-gradient(to right,rgb(19, 19, 49),rgb(7, 7, 7));
+    background: radial-gradient(ellipse at bottom ,#1b2735 0%,#090a0f 100%);
 }
 
 .container{
     position: absolute;
-    right: 600px;
+    left: 495px;
     top: 300px;
-  
     width: 600px;
     height: 300px;
     padding-left: 200px;
@@ -30,22 +29,22 @@ body
     font-size: 200px;
     padding-bottom: 45px;
     padding-right: 8px;
+    text-shadow: 0 0 15px white;
+    -webkit-text-stroke: 2px gold;
+   
   
     
 }
-.container :first-child{
+
+.container :last-child{
     position: absolute;
-    left: -700px;
-    transition: transform  2s ease-in-out;
-
-
-
+    transition: transform  2s ease-out;
 }
-
 .balllon{
    animation: animate 2s ease-in-out infinite;
     transition: transform 2s ease;
     position: absolute;
+   
    
 }
 
@@ -75,6 +74,8 @@ body
     background-color: #FFD700;
     color: blue;
     font-size: 60px;
+    box-shadow: 0 0 20px white;
+   
 
 }
 .file{
@@ -120,8 +121,8 @@ body
     height: 250px;
     border-radius: 95px 95px 100px 100px;
     background-color: #C0C0C0;
-    color: blue;
     font-size: 60px;
+    box-shadow: 0 0 20px white;
 }
 .file1{
     background-color: black;
@@ -165,8 +166,8 @@ body
     height: 250px;
     border-radius: 95px 95px 100px 100px;
     background-color:  #800080;
-    color: blue;
     font-size: 60px;
+    box-shadow: 0 0 20px white;
 }
 .file2{
     background-color: black;
@@ -202,3 +203,44 @@ body
       top: 100vh;
     }
   }
+
+  .NewYear{
+    position: absolute;
+    top: 900px;
+    left: 595px;
+    font-size: 80px;
+    color: gold;
+    visibility: hidden;
+    transition: transform 2s ease-in;
+    text-shadow: 0 0 13px white;
+
+
+  }
+  .balllon3{
+    visibility: hidden;
+    position: absolute;
+    top:-580px;
+    left: 890px;
+    transition: transform 3.5s ease-out;
+
+  }/*juste pour l essai*/
+  .ballon3{
+    position: absolute;
+    top: 280px;
+    left: 130px;
+    width: 100px;
+    height: 150px;
+    border-radius: 100px 100px 110px 110px;
+    background-color:  goldenrod;
+    box-shadow: 0 0 20px white;
+}
+.file3{
+    background-color: black;
+    height: 153px;
+    width: 2px;
+    position: absolute;
+    top: 430px;
+    left: 180px;
+   
+
+}

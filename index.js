@@ -1,8 +1,44 @@
+setTimeout(() => {
+  const balle3_1 = document.querySelector(".balllon3");
+  balle3_1.style.transform = "translateY(320px)";
+  balle3_1.style.visibility = "visible";
+}, 10000);
+setTimeout(() => {
+  const balle3_2 = document.querySelector(".balllon3");
+  balle3_2.style.transform = "translateY(-400px)";
+  balle3_2.style.visibility = "visible";
+}, 15000);
+setTimeout(() => {
+  const Balle3_3 = document.querySelector(".balllon3");
+  Balle3_3.style.transform = "translateY(320px)";
+  Balle3_3.style.visibility = "visible";
+}, 16728);
+setTimeout(() => {
+  const chiffre4 = document.getElementById("chif4");
+  chiffre4.style.transform = "translateY(-550px)";
+}, 15000);
 
 setTimeout(() => {
-  const chiff1= document.getElementById("chif1");
-  chiff1.style.transform = "translateX(800px)";
-}, 9000);
+  const Chiffre4 = document.getElementById("chif4");
+  Chiffre4.style.transform = "translateY(3px)";
+}, 17000);
+
+setTimeout(() => {
+  const BALLE3_4 = document.querySelector(".balllon3");
+  BALLE3_4.style.transform = "translateY(-320px)";
+  BALLE3_4.style.visibility = "visible";
+}, 20500);
+
+setTimeout(() => {
+  const nYear = document.querySelector(".NewYear");
+  nYear.style.transform = "translateY(-400px)";
+  nYear.style.visibility = "visible";
+}, 10000);
+
+setTimeout(() => {
+  const chiffr4 = document.getElementById("chif4");
+  chiffr4.textContent = "5";
+}, 17000);
 
 setTimeout(() => {
   const bal = document.querySelector(".balllon");
@@ -34,9 +70,9 @@ setTimeout(() => {
 setTimeout(() => {
   const contenue = document.querySelector(".container");
   contenue.style.visibility = "visible";
-
   contenue.style.transform = "translateY(-100px)";
 }, 9000);
+
 setInterval(() => {
   function randomemoji() {
     const emoji = ["🎉", "🎊", "🌟", "🥳", "🎇"];
@@ -59,7 +95,7 @@ setInterval(() => {
     e.style.left = left + "px";
     e.style.fontSize = 0.5 + size + "em";
     e.style.animationDuration = duration + "s";
-    e.style.transform=`rotate(${Math.random() * 360}deg)`
+    e.style.transform = `rotate(${Math.random() * 360}deg)`;
 
     division.appendChild(e);
 
@@ -72,3 +108,4 @@ setInterval(() => {
     div();
   }, 50);
 }, 8000);
+
